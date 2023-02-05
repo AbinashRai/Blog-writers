@@ -1,0 +1,181 @@
+#index .why-choose-us .row {
+  padding-top: 5rem;
+}
+#index .why-choose-us .row .col {
+  margin-bottom: 4rem;
+}
+#index .why-choose-us .card {
+  position: relative;
+  border: 0.15rem solid var(--color-primary);
+  display: inline-block;
+  height: 100%;
+}
+#index .why-choose-us .card::before {
+  position: absolute;
+  content: "";
+  right: -1px;
+  bottom: -1px;
+  border-bottom: 4rem solid var(--color-primary);
+  border-left: 4rem solid transparent;
+}
+#index .why-choose-us .card::after {
+  position: absolute;
+  content: "";
+  right: -2px;
+  bottom: -2px;
+  border-bottom: 4rem solid white;
+  border-left: 4rem solid transparent;
+}
+#index .why-choose-us .card .card-body {
+  padding: 5rem 2rem 1rem 3rem;
+}
+#index .why-choose-us .card .card-body .bordered-icon i {
+  position: relative;
+}
+#index .why-choose-us .card .card-body .bordered-icon {
+  position: absolute;
+  top: -13%;
+  padding: 1rem 2rem;
+  font-size: var(--h2-fontsize);
+  background: var(--color-primary);
+  color: #fff;
+  width: fit-content;
+}
+#index .why-choose-us .card .card-body .bordered-icon::before {
+  position: absolute;
+  content: "";
+  right: -2px;
+  bottom: -2px;
+  border-bottom: 2rem solid var(--color-primary);
+  border-left: 2rem solid transparent;
+}
+#index .why-choose-us .card .card-body .bordered-icon::after {
+  position: absolute;
+  content: "";
+  right: -2px;
+  bottom: -2px;
+  border-bottom: 3rem solid white;
+  border-left: 3rem solid transparent;
+}
+#index .how-we-work .container {
+  margin: 5rem auto;
+  padding: 0 2rem;
+  position: relative;
+}
+#index .how-we-work .container .center-line {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: var(--color-primary);
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+#index .how-we-work .container .row {
+  display: flex;
+}
+#index .how-we-work .container .row-1 {
+  justify-content: flex-start;
+}
+#index .how-we-work .container .cols-img {
+  width: 50%;
+  text-align: center;
+}
+#index .how-we-work .container .row-2 {
+  justify-content: flex-end;
+}
+#index .how-we-work .container .row .cols {
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+#index .how-we-work .row .cols .line-number,
+#index .how-we-work .center-line .scroll-icon {
+  position: absolute;
+  background: #f2f2f2;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: var(--color-primary);
+  font-size: 17px;
+  box-shadow: 0 0 0 4px var(--color-primary), inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+#index .how-we-work .center-line .scroll-icon {
+  bottom: 0px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+#index .how-we-work .row-1 .cols .line-number {
+  top: 15px;
+  right: -60px;
+}
+#index .how-we-work .row-2 .cols .line-number {
+  top: 15px;
+  left: -60px;
+}
+@media (width<=991px) {
+  #index .how-we-work .container .center-line {
+    left: 40px;
+  }
+  #index .how-we-work .container .row {
+    margin: 30px 0 3px 60px;
+  }
+  #index .how-we-work .container .row .cols {
+    width: 100%;
+  }
+  #index .how-we-work .row-1 .cols::before {
+    left: -7px;
+  }
+  #index .how-we-work .row-1 .cols .line-number {
+    left: -60px;
+  }
+  #index .how-we-work .container .cols-img {
+    width: 100%;
+  }
+}
+@media (width<=576px) {
+  #index .how-we-work .container .center-line,
+  #index .how-we-work .row .cols::before,
+  #index .how-we-work .row .cols .line-number {
+    display: none;
+  }
+  #index .how-we-work .container .row {
+    margin: 10px 0;
+  }
+}
+#index .services {
+  text-align: center;
+}
+@media (width>=991px) {
+  #index .services .row .col:nth-of-type(even) img {
+    padding-top: 17rem;
+  }
+}
+
+#index .services .card {
+  text-align: center;
+  box-shadow: 0px 0px 12px #a1a1a126;
+  border: none;
+}
+#index .services .card h3 {
+  font-size: var(--h5-fontsize);
+}
+#index .services .card a {
+  font-size: var(--h6-fontsize);
+}
+#index
+  .frequently-asked-questions
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button {
+  font-size: var(--h3-fontsize);
+}
+
+
+

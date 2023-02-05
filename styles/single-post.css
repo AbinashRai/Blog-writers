@@ -1,0 +1,31 @@
+#single-post img {
+  display: block;
+  margin: auto;
+}
+#single-post .share-list {
+  list-style: none;
+  display: block;
+  gap: 2rem;
+}
+#single-post .other-blogs {
+  text-align: center;
+}
+#single-post .other-blogs ul {
+  list-style: none;
+}
+#single-post .other-blogs ul li {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  #single-post .share-blog-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #single-post .share-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
